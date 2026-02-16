@@ -1,6 +1,8 @@
 
 public class OOPSBannerApp {
-    public static void main(String[] args) {
+
+    // This is the new method that handles the printing logic
+    public static void printBanner() {
         // ROW 1
         System.out.println("  *** " + "  *** " + " ****** " + "  ***** ");
         
@@ -21,5 +23,10 @@ public class OOPSBannerApp {
         
         // ROW 7
         System.out.println("  *** " + "  *** " + " * " + "  ***** ");
+    }
+
+    // Main method now just calls our custom method
+    public static void main(String[] args) {
+        printBanner();
     }
 }
